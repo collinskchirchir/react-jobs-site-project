@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import logo from '../img/logo1.svg';
+import hero from '../img/hero.jpg';
 /*eslint-disable*/
 function Header() {
   return (
@@ -35,7 +36,38 @@ function Header() {
 }
 
 const HeaderStyled = styled.header`
+  min-height: 90vh;
+  background: linear-gradient(to top, rgba(0,0,0, 0.2) , rgba(0,0,0, 0.5)), url(${hero}) no-repeat;
+  .navigation{
+    border-bottom: 1px solid #f4f7f773;
+    .nav-wrapper{
+      margin: 0 20rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 10vh;
+    }
+    .logo{
+      img{
+        width: 50px
+      }
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      li{
+        margin: 0 1rem
+      }
+    }
+    .cta-btn{
+      display: inline-block;
+      background-color: var(--color-primary);
+      padding: 1rem 1.7rem;
+      border-radius: 7px;
+      
 
+    }
+  }
 `;
 
 export default Header;
