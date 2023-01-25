@@ -8,10 +8,20 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     list-style: none;
   }
+  :root{
+    --color-neutral: #f2f6ff;
+    --color-neutral-2: #fafaff;
+    --color-neutral-3: #f4f7f7;
+    --color-primary: #27ae60;
+    --color-primary-dark: #005aff;
+    --color-white: #fff;
+    --color-dark: #272a33;
+  }
 
-  body{
-    background: red;
-    
+  body{    
+    font-family: 'Montserrat', sans-serif; 
+    color: var(--color-white);
+    font-size: 1.2rem;
   }
 `;
 
