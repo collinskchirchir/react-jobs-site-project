@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import logo from '../img/logo1.svg';
 /*eslint-disable*/
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
       <nav className='navigation'>
         <div className='nav-wrapper'>
           <div className='logo'>
-            <img src='{logo}' alt=''></img>
+            <img src={logo}   alt=''></img>
           </div>
           <ul>
             <li>
