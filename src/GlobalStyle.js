@@ -27,6 +27,12 @@ const GlobalStyle = createGlobalStyle`
   a{
     color: var(--color-white)
   }
+  p{
+    color: #656565;
+  }
+  .title-con{
+    text-align: center;
+  }
 `;
 
 export default GlobalStyle;
